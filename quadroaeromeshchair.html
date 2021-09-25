@@ -4,7 +4,7 @@
     <meta chaet="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Cart  </title>
+    <title>Product Details </title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,107 +28,104 @@
           <nav>
             <ul id="MenuItems">
               <li><a href="index.html">Home</a></li>
-              <li><a href="products.html">Products </a></li>
+              <li><a href="productdetails.html">Products </a></li>
               <li><a href="">About</a></li>
-              <li><a href="cart.html">Contact</a></li>
+              <li><a href="contactus.html">Contact</a></li>
               <li><a href="account.html">Account</a></li>
             </ul>
           </nav>
-          <a href="cart.html"></a><img src="images/cart.png" width="30px" height="30px" /></a>
+          <img src="images/cart.png" width="30px" height="30px" />
           <img src="images/menu.png" class="menu-icon" onclick="menutoggle()"/>
         </div>
       
       </div>
     </div>
+    <!--------single product details-->
 
-    <!----cart items details-->
-    <div class="small-container cart-page">
-        <table>
-            <tr>
-                <th>Products</th>
-                <th>Quantity</th>
-                <th>Subtotal</th>
-            </tr>
-            <tr>
-                <td> 
-                <div class="cart-info">
-                  <img src="images/belgravia-2-seater-sofa-moss-green-velvet-p34866-2760278_thumb.jpg" >
-                  <div>
-                  <p>Belgravia 2 seater Sofa </p>
-                  
-                  <small>Price: Rs.40000 </small>
-                  <br>
-                  <a href="">Remove </a>
-                </div>
-                </div>    
-                </td>
-                <td><input type="number" value="1"></td>
-                <td>Rs.40000</td>
-            </tr>
-            <tr>
-              <td> 
-              <div class="cart-info">
-                <img src="Images/Computer-1 table teak imperial teak.jpg" >
-                <div>
-                <p>Computer Table Teak</p>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/Quadro Aero Mesh Office Chair - Grey 8000.jpg" width="100%">
+
+
+
+
                 
-                <small>Price: Rs.15000 </small>
-                <br>
-                <a href="">Remove </a>
-              </div>
-              </div>    
-              </td>
-              <td><input type="number" value="1"></td>
-              <td>Rs.15000</td>
-          </tr>
-          <tr>
-            <td> 
-            <div class="cart-info">
-              <img src="Images/bora-rope-garden-dining-chair-black-p35737-2759857_thumb.jpg" >
-              <div>
-              <p>Bora Rope Garden dining chair  </p>
-              
-              <small>Price: Rs.40000 </small>
-              <br>
-              <a href="">Remove </a>
             </div>
-            </div>    
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>Rs.40000</td>
-        </tr>
-        </table>
-
-        <div class="total-price">
-          <table>
-            <tr>
-              <td>Subtotal</td>
-              <td>Rs.95000</td>
-              
-              
-            </tr>
-            <tr>
-              <td>Tax</td>
-              <td>Rs.5000</td>
-            </tr>
-            <tr>
-              <td>Total</td>
-              <td>Rs.100000 </td>
-            </tr>
-          </table>
-
-
-
+            <div class="col-2">
+                <p>Home/Products</p>
+                <h1>Quadro Aero Mesh Office Chair</h1>
+                <h4>Rs.8000</h4>
+                <input type="number" value="1">
+                <a href="cart.html" class="btn">Add To cart</a>
+                <h3>Product Details </h3>
+                <br>
+                <p>We Represent you the Premium Quadro Aero Mesh Office Chair Grey   </p>
+            </div>
         </div>
-
-
-
-
-
-
-
-
     </div>
+
+    <!----title------->
+    <div class="small-container">
+      <div class="row row-2" >
+        <h2>Related Products</h2>
+        <p>view more</p>
+      </div>
+    </div>
+
+
+
+
+     <!----products-->
+      
+     <div class="small-container">
+     
+
+        <div class="row">
+          <div class="col-4">
+           <a href="computertable.html"> <img src="Images/Computer-1 table teak imperial teak.jpg" /></a>
+            <h4>
+              Computer Table <br />
+              Imperial teak
+            </h4>
+  
+            <p>Rs.15,000</p>
+          </div>
+          <div class="col-4">
+           <a href="dixydrawer3door.html"><img src="Images/Dixy-1-drawer-3-door-side-board.jpg" /></a>
+            <h4>
+              Dixy Drawer <br />
+              3 Door
+            </h4>
+  
+            <p>Rs.20,000</p>
+          </div>
+          <div class="col-4">
+           <a href="kingstondining.html"> <img src="images/Kingston-dining-set cappuchino 600x1500x760.jpg" /></a>
+            <h4>
+              Kingston Dining Set <br />
+              cappuchino
+            </h4>
+  
+            <p>Rs.35,000</p>
+          </div>
+          <div class="col-4">
+           <a href="rondinowardrobe.html"><img src="Images/Rondino_Wardrobe sliding Mud oak.jpg" /></a>
+            <h4>
+              Rondino Wardrobe sliding <br />
+              Mud Oak
+            </h4>
+  
+            <p>Rs.32,000</p>
+          </div>
+        </div>
+        
+        </div>
+        
+        
+        
+        
+      </div>
 
    
 
@@ -207,6 +204,35 @@
 
     }
 </script>    
+
+<!----------JS for Single product detail-->
+<!--we can write all script in above script, but we have write anothe script tag for simplicity-->
+<script>
+    var ProductImg = document.getElementById("product-img");//larger image
+    var SmallImg = document.getElementsByClassName("small-img");//it returns list of 4 images having index 0,1,2,3 as we have 4 images with class name "small0-img" 
+
+    SmallImg[0].onclick = function()//when user click on first image or images at 0 index, it will display as ProdcutImg.src replace with clicked or SmallImg[0], so we get smallimg[0] in bigger form, similarly when click on smallimg[1], it will display in bigger picture and so on 
+    {
+        ProductImg.src = SmallImg[0].src;   
+    }
+
+    SmallImg[1].onclick = function()
+    {
+        ProductImg.src = SmallImg[1].src;   
+    }
+
+    SmallImg[2].onclick = function()
+    {
+        ProductImg.src = SmallImg[2].src;   
+    }
+
+    SmallImg[3].onclick = function()
+    {
+        ProductImg.src = SmallImg[3].src;   
+    }
+
+
+</script>
 
 </body>
 
