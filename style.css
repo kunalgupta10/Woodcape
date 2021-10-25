@@ -464,8 +464,42 @@ form a{
     background-color: yellow;
   }
 
+/*---Form on img---*/
+
+.bg-img {
+  /* The image used */
+  background-image:url(Images/dry-twig-wooden-cabinet-white-roomformbackground.jpg);
 
 
+  
+  background-position:inherit;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position:relative;
+  
+}
+
+
+
+
+
+
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
 
 
 
